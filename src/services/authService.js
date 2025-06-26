@@ -1,5 +1,6 @@
 // src/services/authService.js
-const API_BASE_URL = 'http://localhost:5000/api'; // Your Flask API local URL
+// const API_BASE_URL = 'http://localhost:5000/api'; // Your Flask API local URL
+const API_BASE_URL = 'https://api-llmcentral-gateway-dev-centralindia-dph5esdxhmgrhgab.centralindia-01.azurewebsites.net/api'; // Your Flask API local URL
 
 export const loginUser = async (username, password) => {
     const response = await fetch(`${API_BASE_URL}/auth/login`, {
